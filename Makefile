@@ -36,10 +36,11 @@ requirements: test_requirements ## Installs all requirements needed by developme
 
 quality:  ## Run quality tests and checks
 	make selfcheck
-	pylint html_xblock tests
-	pycodestyle html_xblock tests --config=pylintrc
-	pydocstyle html_xblock tests --config=pylintrc
-	isort --check-only --diff --recursive tests html_xblock
+	pylint completable_html_xblock tests
+	pylint --py3k completable_html_xblock
+	pycodestyle completable_html_xblock tests --config=pylintrc
+	pydocstyle completable_html_xblock tests --config=pylintrc
+	isort --check-only --diff --recursive tests completable_html_xblock
 
 unit-coverage: clean ## Run coverage and unit tests
 	mkdir var/

@@ -1,17 +1,15 @@
 """This XBlock help creating a secure and easy-to-use HTML blocks in edx-platform."""
+from __future__ import absolute_import
+
 import logging
 
 import pkg_resources
 from html_xblock import HTML5XBlock
+from html_xblock.utils import _  # pylint: disable=protected-access
 from xblock.completable import CompletableXBlockMixin
 from xblock.core import XBlock
-from xblock.fields import (
-    Scope,
-    String,
-)
+from xblock.fields import Scope, String
 from xblockutils.resources import ResourceLoader
-
-from html_xblock.utils import _  # pylint: disable=protected-access
 
 log = logging.getLogger(__name__)  # pylint: disable=invalid-name
 xblock_loader = ResourceLoader(__name__)  # pylint: disable=invalid-name

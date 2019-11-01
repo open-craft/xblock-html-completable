@@ -32,6 +32,7 @@ setup(
     install_requires=[
         'XBlock',
         'bleach',
+        'html-xblock @ git+https://github.com/open-craft/xblock-html.git@v0.1.0#egg=html-xblock',
     ],
     entry_points={
         'xblock.v1': [
