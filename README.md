@@ -1,6 +1,6 @@
 # HTML XBlock
 
-[![build](https://circleci.com/gh/open-craft/xblock-html/tree/master.svg?style=shield)](https://circleci.com/gh/open-craft/xblock-html/tree/master) [![codecov](https://codecov.io/gh/open-craft/xblock-html/branch/master/graph/badge.svg)](https://codecov.io/gh/open-craft/xblock-html)
+[![CircleCI](https://circleci.com/gh/open-craft/xblock-html-completable.svg?style=svg)](https://circleci.com/gh/open-craft/xblock-html-completable)
 
 
 A subclass of the new HTML XBlock that disables marking the block as completed and adds custom completion endpoint. 
@@ -11,10 +11,10 @@ problems when trying to embed it in another site (in particular, it often hosts 
 jQuery being present, and it allows users to include arbitrary JavaScript).
 
 ## Installation
-You may install XBlock-html using its setup.py, or if you prefer to use pip, run:
+You may install XBlock-html-completable using its setup.py, or if you prefer to use pip, run:
 
 ```shell
-pip install https://github.com/open-craft/xblock-html
+pip install https://github.com/open-craft/xblock-html-completable
 ```
 You may specify the `-e` flag if you intend to develop on the repo.
 
