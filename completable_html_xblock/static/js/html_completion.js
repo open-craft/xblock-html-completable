@@ -1,23 +1,10 @@
 function HTML5CompletionXBlock(runtime, element, data) {
     /*
-    Add dummy #complete element with event listener for sending the POST to the custom `complete` handler.
+    Add `submitCompletion` function to XBlock.
+    You can invoke it with `document.getElementsByClassName("xblock-student_view-completable_html5")[0].submitCompletion();`.
      */
-    // Add dummy element.
-    var main = document.getElementById("main");
-    var tracker = document.createElement("div");
-    tracker.id = "complete";
-    main.appendChild(tracker);
-
-    // Add `complete` handler to the dummy element.
-    tracker.addEventListener("click", function () {
+    element.submitCompletion = function () {
         var handlerUrl = runtime.handlerUrl(element, 'complete');
-
-        $.post(handlerUrl, JSON.stringify(data)).done(function (response) {
-            if (response.result === 'success') {
-                runtime.notify('save', {state: 'end'});
-            } else {
-                runtime.notify('error', {msg: response.message})
-            }
-        });
-    });
+        $.post(handlerUrl, JSON.stringify(data));
+    };
 }
