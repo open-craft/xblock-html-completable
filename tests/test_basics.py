@@ -32,4 +32,4 @@ class TestHTMLXBlock(unittest.TestCase):
         fragment = block.student_view()
         self.assertIn('<main>Safe <b>html</b><script>alert(\'javascript\');</script></main>', fragment.content)
         self.assertIn('HTML5CompletionXBlock', fragment.js_init_fn)
-        self.assertIn('var tracker', fragment.foot_html())
+        self.assertIn('var handlerUrl', fragment.foot_html())
