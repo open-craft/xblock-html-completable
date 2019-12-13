@@ -23,7 +23,7 @@ def package_data(pkg, roots):
 
 setup(
     name='completable-html-xblock',
-    version='0.1',
+    version='0.1.1',
     description='HTML XBlock will help creating and using a secure, easy-to-use and completable HTML blocks',
     license='AGPL v3',
     packages=[
@@ -32,7 +32,7 @@ setup(
     install_requires=[
         'XBlock',
         'bleach',
-        'html-xblock',
+        'html-xblock==0.1.1',
     ],
     entry_points={
         'xblock.v1': [
