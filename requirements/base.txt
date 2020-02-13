@@ -5,4 +5,4 @@ django-statici18n==1.8.0
 edx-i18n-tools==0.4.7
 Mako==1.0.7
 bleach==2.1.4
-html-xblock==0.1.1
+html-xblock~=0.1.1
