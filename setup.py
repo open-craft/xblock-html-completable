@@ -23,7 +23,7 @@ def package_data(pkg, roots):
 
 setup(
     name='completable-html-xblock',
-    version='0.1.2',
+    version='0.2.0',
     description='HTML XBlock will help creating and using a secure, easy-to-use and completable HTML blocks',
     license='AGPL v3',
     packages=[
