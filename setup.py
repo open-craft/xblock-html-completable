@@ -32,7 +32,7 @@ setup(
     install_requires=[
         'XBlock',
         'bleach',
-        'html-xblock~=0.1.1',
+        'html-xblock~=0.2.0',
     ],
     entry_points={
         'xblock.v1': [
