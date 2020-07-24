@@ -18,7 +18,7 @@ pip install https://github.com/open-craft/xblock-html-completable
 ```
 You may specify the `-e` flag if you intend to develop on the repo.
 
-Note that as of version 0.2.0, Python 2.7 is no longer supported. The current minimum Python version is 3.5.
+Note that as of version 1.0.0, Python 2.7 is no longer supported. The current minimum Python version is 3.5.
 
 To enable this block type, add `completable_html5` to course's advanced module list.
 
