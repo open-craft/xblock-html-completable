@@ -32,7 +32,7 @@ setup(
     install_requires=[
         'XBlock',
         'bleach',
-        'html-xblock~=1.0.0', # TODO: Bumpt the minor once it's pushed to PyPi.
+        'html-xblock~=1.1.0',
     ],
     entry_points={
         'xblock.v1': [
