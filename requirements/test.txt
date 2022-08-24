@@ -1,14 +1,14 @@
 # Requirements for test runs
 
-codecov==2.0.15
-diff-cover==2.6.1
-django-nose==1.4.4
+codecov==2.1.12
+diff-cover==6.5.1
+django-nose==1.4.7
 lazy==1.4
-pytest-cov==2.8.1
-tox==3.15.0
-tox-battery==0.6.0
-mock==3.0.5
+pytest-cov==3.0.0
+tox==3.25.1
+tox-battery==0.6.1
+mock==4.0.3
 
-# Github requirements
-git+https://github.com/edx/django-pyfs.git@2.1#egg=django-pyfs==2.1
-xblock-sdk
+# Open edX requiements
+django-pyfs==3.1.0
+xblock-sdk==0.5.1

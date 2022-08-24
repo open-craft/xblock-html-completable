@@ -33,23 +33,21 @@ test_requirements: base_requirements ## Install requirements needed by test envi
 	pip install -q -r requirements/test.txt --exists-action w
 
 requirements: base_requirements test_requirements ## Installs all requirements needed by developmenent and test environments
-	pip install -e .
 	@echo "Finished installing requirements."
 
 quality:  ## Run quality tests and checks
 	make selfcheck
 	pylint completable_html_xblock tests
-	pylint --py3k completable_html_xblock
 	pycodestyle completable_html_xblock tests --config=pylintrc
 	pydocstyle completable_html_xblock tests --config=pylintrc
-	isort --check-only --diff --recursive tests completable_html_xblock
+	isort --check-only --diff tests completable_html_xblock
 
 unit-coverage: clean ## Run coverage and unit tests
 	mkdir var/
 	coverage run ./manage.py test
 	coverage html
 	coverage xml
-	diff-cover coverage.xml --html-report diff-cover.html
+	diff-cover --compare-branch origin/master coverage.xml --html-report diff-cover.html
 
 unit: clean ## Run unit tests
 	mkdir var/

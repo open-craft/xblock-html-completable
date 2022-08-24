@@ -54,7 +54,7 @@ class CompletableHTML5XBlock(CompletableXBlockMixin, HTML5XBlock):
         """
         Return a fragment that contains the html for the student view. Add #complete element.
         """
-        frag = super(CompletableHTML5XBlock, self).student_view()
+        frag = super().student_view()
         frag.add_javascript(self.completable_resource_string('static/js/html_completion.js'))
         frag.initialize_js('HTML5CompletionXBlock')
 
