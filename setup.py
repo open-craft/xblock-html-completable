@@ -23,21 +23,19 @@ def package_data(pkg, roots):
 
 setup(
     name='completable-html-xblock',
-    version='1.2.0',
+    version='1.2.1',
     description='HTML XBlock will help creating and using a secure, easy-to-use and completable HTML blocks',
     license='AGPL v3',
     packages=[
         'completable_html_xblock',
     ],
     install_requires=[
-        'XBlock',
-        'bleach',
-        'html-xblock~=1.2.0',
+        'html-xblock>=1.0.0',
     ],
     entry_points={
         'xblock.v1': [
             'completable_html5 = completable_html_xblock:CompletableHTML5XBlock',
         ]
     },
-    package_data=package_data("completable_html_xblock", ["static", "public"]),
+    package_data=package_data("completable_html_xblock", ["static", "translations"]),
 )
