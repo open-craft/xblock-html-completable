@@ -5,14 +5,14 @@ import logging
 
 import pkg_resources
 from html_xblock import HTML5XBlock
-from html_xblock.utils import _  # pylint: disable=protected-access
+from html_xblock.utils import _
 from xblock.completable import CompletableXBlockMixin
 from xblock.core import XBlock
 from xblock.fields import Scope, String
 from xblockutils.resources import ResourceLoader
 
-log = logging.getLogger(__name__)  # pylint: disable=invalid-name
-xblock_loader = ResourceLoader(__name__)  # pylint: disable=invalid-name
+log = logging.getLogger(__name__)
+xblock_loader = ResourceLoader(__name__)
 
 
 class CompletableHTML5XBlock(CompletableXBlockMixin, HTML5XBlock):
@@ -24,7 +24,7 @@ class CompletableHTML5XBlock(CompletableXBlockMixin, HTML5XBlock):
         display_name=_('Display Name'),
         help=_('The display name for this component.'),
         scope=Scope.settings,
-        default=_('Completable')
+        default=_('Completable'),
     )
     allow_javascript = True
     editor = String(
@@ -34,11 +34,8 @@ class CompletableHTML5XBlock(CompletableXBlockMixin, HTML5XBlock):
         ),
         display_name=_('Editor'),
         default='raw',
-        values=[
-            {'display_name': _('Visual'), 'value': 'visual'},
-            {'display_name': _('Raw'), 'value': 'raw'}
-        ],
-        scope=Scope.settings
+        values=[{'display_name': _('Visual'), 'value': 'visual'}, {'display_name': _('Raw'), 'value': 'raw'}],
+        scope=Scope.settings,
     )
     has_custom_completion = True
     editable_fields = ('display_name', 'editor')
@@ -50,7 +47,7 @@ class CompletableHTML5XBlock(CompletableXBlockMixin, HTML5XBlock):
         return data.decode('utf8')
 
     @XBlock.supports('multi_device')
-    def student_view(self, context=None):  # pylint: disable=unused-argument
+    def student_view(self, context=None):
         """
         Return a fragment that contains the html for the student view. Add #complete element.
         """
