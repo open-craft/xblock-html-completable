@@ -24,12 +24,14 @@ class TestHTMLXBlock(unittest.TestCase):
         Test a basic rendering with custom completion enabled.
         Expects that `HTML5CompletionXBlock` JS function was initialized and `tracker` is present in the resources.
         """
-        field_data = DictFieldData({
-            'data': '<main>Safe <b>html</b><script>alert(\'javascript\');</script></main>',
-        })
+        field_data = DictFieldData(
+            {
+                'data': '<p>Safe <b>html</b><script>alert(\'javascript\');</script></p>',
+            }
+        )
         block = completable_html_xblock.CompletableHTML5XBlock(self.runtime, field_data, None)
         self.assertEqual(block.has_custom_completion, True)
         fragment = block.student_view()
-        self.assertIn('<main>Safe <b>html</b><script>alert(\'javascript\');</script></main>', fragment.content)
+        self.assertIn('<p>Safe <b>html</b><script>alert(\'javascript\');</script></p>', fragment.content)
         self.assertIn('HTML5CompletionXBlock', fragment.js_init_fn)
         self.assertIn('var handlerUrl', fragment.foot_html())
