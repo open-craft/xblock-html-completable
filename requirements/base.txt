@@ -10,7 +10,7 @@ asgiref==3.7.2
     # via django
 bleach[css]==6.0.0
     # via html-xblock
-django==3.2.19
+django==3.2.20
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   html-xblock
@@ -18,7 +18,7 @@ fs==2.4.16
     # via xblock
 html-xblock==1.3.5
     # via -r requirements/base.in
-lxml==4.9.2
+lxml==4.9.3
     # via xblock
 mako==1.2.4
     # via xblock-utils
