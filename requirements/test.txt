@@ -18,12 +18,13 @@ binaryornot==0.4.4
     # via cookiecutter
     # via
     #   -r requirements/base.txt
+    #   bleach
     #   html-xblock
-boto3==1.28.62
+boto3==1.28.63
     # via
     #   -r requirements/base.txt
     #   fs-s3fs
-botocore==1.31.62
+botocore==1.31.63
     # via
     #   -r requirements/base.txt
     #   boto3
@@ -43,7 +44,9 @@ code-annotations==1.5.0
 cookiecutter==2.4.0
     # via xblock-sdk
 coverage[toml]==7.3.2
-    # via pytest-cov
+    # via
+    #   coverage
+    #   pytest-cov
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
@@ -227,6 +230,7 @@ xblock[django]==1.8.1
     # via
     #   -r requirements/base.txt
     #   html-xblock
+    #   xblock
     #   xblock-sdk
     #   xblock-utils
 xblock-sdk==0.7.0
