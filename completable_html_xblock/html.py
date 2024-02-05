@@ -1,4 +1,5 @@
 """This XBlock help creating a secure and easy-to-use HTML blocks in edx-platform."""
+
 from __future__ import absolute_import
 
 import logging
