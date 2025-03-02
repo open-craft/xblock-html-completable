@@ -10,7 +10,7 @@ from html_xblock.utils import _
 from xblock.completable import CompletableXBlockMixin
 from xblock.core import XBlock
 from xblock.fields import Scope, String
-from xblockutils.resources import ResourceLoader
+from xblock.utils.resources import ResourceLoader
 
 log = logging.getLogger(__name__)
 xblock_loader = ResourceLoader(__name__)

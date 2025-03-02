@@ -130,7 +130,7 @@ setup(
     ),
     package_data=package_data("completable_html_xblock", ["static", "translations"]),
     install_requires=load_requirements('requirements/base.in'),
-    python_requires=">=3.8",
+    python_requires=">=3.11",
     keywords='Python edx',
     entry_points={
         'xblock.v1': [
