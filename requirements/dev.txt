@@ -29,11 +29,11 @@ bleach[css]==6.2.0
     # via
     #   -r requirements/quality.txt
     #   html-xblock
-boto3==1.40.45
+boto3==1.40.50
     # via
     #   -r requirements/quality.txt
     #   fs-s3fs
-botocore==1.40.45
+botocore==1.40.50
     # via
     #   -r requirements/quality.txt
     #   boto3
@@ -99,7 +99,7 @@ edx-i18n-tools==1.9.0
     # via -r requirements/quality.txt
 edx-lint==5.6.0
     # via -r requirements/quality.txt
-filelock==3.19.1
+filelock==3.20.0
     # via
     #   -r requirements/ci.txt
     #   tox
@@ -117,7 +117,7 @@ fs-s3fs==1.1.1
     #   xblock-sdk
 html-xblock==2.0.0
     # via -r requirements/quality.txt
-idna==3.10
+idna==3.11
     # via
     #   -r requirements/quality.txt
     #   requests
@@ -196,7 +196,7 @@ path==16.16.0
     #   edx-i18n-tools
 pip-tools==7.5.1
     # via -r requirements/pip-tools.txt
-platformdirs==4.4.0
+platformdirs==4.5.0
     # via
     #   -r requirements/ci.txt
     #   -r requirements/quality.txt
@@ -291,7 +291,7 @@ requests==2.32.5
     #   -r requirements/quality.txt
     #   cookiecutter
     #   xblock-sdk
-rich==14.1.0
+rich==14.2.0
     # via
     #   -r requirements/quality.txt
     #   cookiecutter
@@ -343,7 +343,7 @@ tox==3.28.0
     #   tox-battery
 tox-battery==0.6.2
     # via -r requirements/ci.txt
-types-python-dateutil==2.9.0.20250822
+types-python-dateutil==2.9.0.20251008
     # via
     #   -r requirements/quality.txt
     #   arrow
@@ -352,7 +352,7 @@ urllib3==2.5.0
     #   -r requirements/quality.txt
     #   botocore
     #   requests
-virtualenv==20.34.0
+virtualenv==20.35.3
     # via
     #   -r requirements/ci.txt
     #   tox
