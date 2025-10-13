@@ -28,11 +28,11 @@ bleach[css]==6.2.0
     # via
     #   -r requirements/test.txt
     #   html-xblock
-boto3==1.40.45
+boto3==1.40.50
     # via
     #   -r requirements/test.txt
     #   fs-s3fs
-botocore==1.40.45
+botocore==1.40.50
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -97,7 +97,7 @@ fs-s3fs==1.1.1
     #   xblock-sdk
 html-xblock==2.0.0
     # via -r requirements/test.txt
-idna==3.10
+idna==3.11
     # via
     #   -r requirements/test.txt
     #   requests
@@ -168,7 +168,7 @@ path==16.16.0
     # via
     #   -r requirements/test.txt
     #   edx-i18n-tools
-platformdirs==4.4.0
+platformdirs==4.5.0
     # via pylint
 pluggy==1.6.0
     # via
@@ -242,7 +242,7 @@ requests==2.32.5
     #   -r requirements/test.txt
     #   cookiecutter
     #   xblock-sdk
-rich==14.1.0
+rich==14.2.0
     # via
     #   -r requirements/test.txt
     #   cookiecutter
@@ -282,7 +282,7 @@ tinycss2==1.4.0
     #   bleach
 tomlkit==0.13.3
     # via pylint
-types-python-dateutil==2.9.0.20250822
+types-python-dateutil==2.9.0.20251008
     # via
     #   -r requirements/test.txt
     #   arrow
