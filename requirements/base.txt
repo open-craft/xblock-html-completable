@@ -10,9 +10,9 @@ asgiref==3.11.0
     # via django
 bleach[css]==6.3.0
     # via html-xblock
-boto3==1.41.2
+boto3==1.42.0
     # via fs-s3fs
-botocore==1.41.2
+botocore==1.41.6
     # via
     #   boto3
     #   s3transfer
@@ -54,7 +54,7 @@ pytz==2025.2
     # via xblock
 pyyaml==6.0.3
     # via xblock
-s3transfer==0.15.0
+s3transfer==0.16.0
     # via boto3
 simplejson==3.20.2
     # via xblock
@@ -63,7 +63,7 @@ six==1.17.0
     #   fs
     #   fs-s3fs
     #   python-dateutil
-sqlparse==0.5.3
+sqlparse==0.5.4
     # via django
 tinycss2==1.4.0
     # via bleach
