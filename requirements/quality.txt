@@ -28,11 +28,11 @@ bleach[css]==6.3.0
     # via
     #   -r requirements/test.txt
     #   html-xblock
-boto3==1.42.0
+boto3==1.42.4
     # via
     #   -r requirements/test.txt
     #   fs-s3fs
-botocore==1.41.6
+botocore==1.42.4
     # via
     #   -r requirements/test.txt
     #   boto3
@@ -72,7 +72,7 @@ coverage[toml]==7.12.0
     #   pytest-cov
 dill==0.4.0
     # via pylint
-django==5.2.8
+django==5.2.9
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
@@ -168,7 +168,7 @@ path==16.16.0
     # via
     #   -r requirements/test.txt
     #   edx-i18n-tools
-platformdirs==4.5.0
+platformdirs==4.5.1
     # via pylint
 pluggy==1.6.0
     # via
@@ -206,7 +206,7 @@ pypng==0.20220715.0
     # via
     #   -r requirements/test.txt
     #   xblock-sdk
-pytest==9.0.1
+pytest==9.0.2
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -286,7 +286,7 @@ tzdata==2025.2
     # via
     #   -r requirements/test.txt
     #   arrow
-urllib3==2.5.0
+urllib3==2.6.0
     # via
     #   -r requirements/test.txt
     #   botocore
