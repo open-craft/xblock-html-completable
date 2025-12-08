@@ -19,11 +19,11 @@ binaryornot==0.4.4
     # via
     #   -r requirements/base.txt
     #   html-xblock
-boto3==1.42.0
+boto3==1.42.4
     # via
     #   -r requirements/base.txt
     #   fs-s3fs
-botocore==1.41.6
+botocore==1.42.4
     # via
     #   -r requirements/base.txt
     #   boto3
@@ -128,7 +128,7 @@ pygments==2.19.2
     #   rich
 pypng==0.20220715.0
     # via xblock-sdk
-pytest==9.0.1
+pytest==9.0.2
     # via
     #   pytest-cov
     #   pytest-django
@@ -192,7 +192,7 @@ tinycss2==1.4.0
     #   bleach
 tzdata==2025.2
     # via arrow
-urllib3==2.5.0
+urllib3==2.6.0
     # via
     #   -r requirements/base.txt
     #   botocore
